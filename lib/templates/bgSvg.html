@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+	<title><%= name %></title>
+	<style>
+		.svg {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			background-size: 32px 32px;
+			background-image: url("data:image/svg+xml;charset=utf-8,<%= encodeURIComponent(data) %>");
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<% for (var i = 0; i < repeat; i++){ %>
+		<!-- -->
+		<div>
+			<% for (var j = 0; j < 10; j++) { %>
+			<span class="svg"></span>
+			<% }%>
+			<!-- -->
+		</div>
+		<% } %>
+		<!-- -->
+	</div>
+</body>
+</html>

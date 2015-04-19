@@ -1,0 +1,13 @@
+{
+  "name": "svg-perf-test",
+  "version": "1.0.0",
+  "author": "",
+  "dependencies": {
+    "browser-perf": "^1.2.4",
+    "glob": "^5.0.5",
+    "lodash": "^3.7.0",
+    "node-static": "^0.7.6",
+    "progress": "^1.1.8",
+    "rimraf": "^2.3.2"
+  }
+}

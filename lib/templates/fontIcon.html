@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+	<title><%= name %></title>
+	<link href="../css/ionicons.min.css" rel="stylesheet"/>
+	<style>
+		.icon-holder{
+			height: 36px;
+		}
+
+		.icon {
+			display: inline-block;
+			width: 32px;
+			font-size: 32px;
+		}
+		.icon:before {
+			display: block;
+			width: 32px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<% for (var i = 0; i < repeat; i++){ %>
+		<!-- -->
+		<div class="icon-holder">
+			<% for (var j = 0; j < 10; j++) { %>
+				<i class="icon ion-<%= name%>"></i>
+			<% }%>
+			<!-- -->
+		</div>
+		<% } %>
+		<!-- -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+	<title><%= name %></title>
+	<style>
+		.svg svg{
+			width: 32px !important;
+			height: 32px  !important ;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<% for (var i = 0; i < repeat; i++){ %>
+		<!-- -->
+		<div>
+			<% for (var j = 0; j < 10; j++) { %>
+			<span class="svg">
+				<%= data %></span>
+			<% }%>
+			<!-- -->
+		</div>
+		<% } %>
+		<!-- -->
+	</div>
+</body>
+</html>

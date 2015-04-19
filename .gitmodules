@@ -1,0 +1,3 @@
+[submodule "ionicons"]
+	path = ionicons
+	url = git@github.com:driftyco/ionicons.git
